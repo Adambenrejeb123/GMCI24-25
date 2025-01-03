@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -9,6 +19,7 @@
 <body>
   <header>WELCOME TO STUIP</header>
 
+  <!-- Login Page -->
   <div class="container" id="login-container">
     <h2>Login Page</h2>
     <label for="userId">ID:</label>
@@ -19,6 +30,7 @@
     <button onclick="renewData()" style="background-color: #e74c3c;">Renew login Data</button>
   </div>
 
+  <!-- Dashboard Page -->
   <div class="container dashboard-section" id="dashboard">
     <div class="links">
       <button onclick="showSubmissions()">Submission Dashboard</button>
@@ -33,6 +45,7 @@
     <button onclick="logout()" style="background-color: #c0392b;">Logout</button>
   </div>
 
+  <!-- Submission Dashboard -->
   <div class="container dashboard-section" id="submissions">
     <h3>Submission Dashboard</h3>
     <table>
@@ -71,11 +84,17 @@
     </table>
   </div>
 
+  <!-- Success Message -->
   <div class="container dashboard-section" id="success" style="display: none;">
     <p class="success">All done! Your data added successfully for student: 17.12.24 - 18:06</p>
     <button onclick="backToDashboard()">Back to Dashboard</button>
   </div>
 
   <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
 </body>
 </html>
